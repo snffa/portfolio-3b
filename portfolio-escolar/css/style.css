@@ -262,6 +262,17 @@ body::after {
   box-shadow: 0 14px 30px rgba(139, 61, 255, 0.36);
 }
 
+
+.botao-contrate {
+  margin-top: 10px;
+  background: linear-gradient(135deg, #ffffff, var(--roxo-claro));
+  color: var(--preto);
+}
+
+.botao-contrate:hover {
+  box-shadow: 0 14px 30px rgba(181, 140, 255, 0.32);
+}
+
 .coluna-dados {
   min-width: 0;
   display: flex;
@@ -603,3 +614,4 @@ li::marker {
     padding-top: 10px;
   }
 }
+
