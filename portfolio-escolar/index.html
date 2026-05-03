@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio Escolar</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Cabeçalho -->
+  <div class="cabecalho">
+    <h1>Portfólio </h1>
+    <p>3º Ano — Turma B — Escola Sesi Senai</p>
+  </div>
+
+  <!-- Abas de navegação -->
+  <div class="abas">
+    <button class="ativo" onclick="mostrarAba('info', this)">Informações</button>
+    <button onclick="mostrarAba('matematica', this)">Matemática</button>
+    <button onclick="mostrarAba('portugues', this)">Português</button>
+    <button onclick="mostrarAba('ciencias', this)">Natureza</button>
+    <button onclick="mostrarAba('historia', this)">Humanas</button>
+    <button onclick="mostrarAba('artes', this)">Técnico</button>
+  </div>
+
+  <!-- ========== ABA: INFORMAÇÕES ========== -->
+  <div id="info" class="secao ativa">
+    <div class="layout-info">
+
+      <!-- Foto e contato -->
+      <div class="coluna-foto">
+        <img src="images/foto-perfil.jpg" alt="Foto de perfil" />
+        <h2>Pedro Leite Fiuza</h2>
+        <p class="subtitulo">Estudante</p>
+        <hr />
+        <div class="contato">
+          <p>pleitefiuza@gmail.com</p>
+          <p>(48) 99102-8768</p>
+          <p>Florianópolis, Santa Catarina</p>
+        </div>
+        <a class="botao-curriculo" href="https://docs.google.com/document/d/19PiPzctgO_L4TtTs3SZFuLiRfalymlvcDyf2OtDeMJI/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Currículo Vitae</a>
+      </div>
+
+      <!-- Dados e metas -->
+      <div class="coluna-dados">
+
+        <div class="card">
+          <h3>Sobre Mim</h3>
+          <p class="texto-apoio">
+            Meu nome é Pedro Leite Fiuza, sou de Florianópolis.  Nasci em 22/04/2008
+  Estudei no Colégio Cruz e Sousa e agora no Sesi senai, comecei no Cruz e Sousa em 2015 com 7 anos e estudei desde o 1 ano até o 9, fiz alguns amigos, vim para a escola Sesi pois o ensino é melhor.
+ Pretendo trabalhar no ramo da programação, front ou back end.
+ Sou um aluno que está na média, não gosto muito de estudar mas é preciso.
+  Gosto de jogar videogames, andar de skate, bicicleta, ficar sem fazer nada, ouvir músicas.
+  Tenho certificado de proficiência em inglês nível B2 de nota CEFR europeu pela universidade de Cambridge.
+
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Dados Escolares</h3>
+          <table>
+            <tr><td>Escola</td><td>Sesi Senai</td></tr>
+            <tr><td>Turma</td><td>3º Ano — Turma B</td></tr>
+            
+          </table>
+        </div>
+
+        <div class="card">
+          <h3>Minhas Metas</h3>
+          <ol>
+            <li>Passar de ano.</li>
+            
+          </ol>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== ABA: MATEMÁTICA ========== -->
+  <div id="matematica" class="secao">
+
+    <div class="materia-cabecalho">
+      <div>
+        <h2>Matemática</h2>
+        <p class="professor">Prof. Luciano</p>
+        <p class="descricao-materia"></p>
+      </div>
+      <div class="media-box">
+        <span class="label">Média</span>
+        <span class="valor">--</span>
+      </div>
+    </div>
+
+    <div class="trimestres" aria-label="Trimestres de Matemática">
+      <button class="ativo" onclick="selecionarTrimestre(this, '1')">1º Trimestre</button>
+      <button onclick="selecionarTrimestre(this, '2')">2º Trimestre</button>
+      <button onclick="selecionarTrimestre(this, '3')">3º Trimestre</button>
+    </div>
+
+    <h3 class="titulo-secao">Atividades</h3>
+    <div class="grid-atividades">
+
+      <div class="card-atividade" data-trimestre="1 2 3">
+        <div class="midia-atividade">
+          <div class="imagem-faltando" role="img" aria-label="Imagem faltando">?</div>
+        </div>
+        <div class="info">
+          <div class="linha-topo">
+            <h4>Atividade Filme Quebrando a Banca</h4>
+            <span class="badge pendente">Não fiz</span>
+          </div>
+          <p class="descricao">Competencias:C5.</p>
+          <p class="descricao">Habilidades: H31, H32</p>        </div>
+      </div>
+
+      <div class="card-atividade" data-trimestre="1 2 3">
+        <div class="midia-atividade">
+          <div class="imagem-faltando" role="img" aria-label="Imagem faltando">?</div>
+        </div>
+        <div class="info">
+          <div class="linha-topo">
+            <h4>jogo</h4>
+            <span class="badge pendente">Não fiz</span>
+          </div>
+          <p class="descricao">Competencias:C5.</p>
+          <p class="descricao">Habilidades: H30, H31</p>
+        </div>
+      </div>
+
+      <div class="card-atividade" data-trimestre="1 2 3">
+       
+        
+      </div>
+
+    </div>
+
+    <div class="card">
+      <h3>Minhas Observações</h3>
+      <p class="texto-apoio">Escreva aqui suas anotações sobre a matéria, dúvidas e pontos importantes para estudar.</p>
+    </div>
+
+  </div>
+
+  <!-- ========== ABA: PORTUGUÊS ========== -->
+  <div id="portugues" class="secao">
+
+    <div class="materia-cabecalho">
+      <div>
+        <h2>Linguagens</h2>
+        <p class="professor">Prof. Claudia</p>
+         <p class="professor">Prof. Natali</p>
+        <p class="descricao-materia"></p>
+      </div>
+      <div class="media-box">
+        <span class="label">Média</span>
+        <span class="valor">--</span>
+      </div>
+    </div>
+
+    <div class="trimestres" aria-label="Trimestres de Linguagens">
+      <button class="ativo" onclick="selecionarTrimestre(this, '1')">1º Trimestre</button>
+      <button onclick="selecionarTrimestre(this, '2')">2º Trimestre</button>
+      <button onclick="selecionarTrimestre(this, '3')">3º Trimestre</button>
+    </div>
+
+    <h3 class="titulo-secao">Atividades</h3>
+    <div class="grid-atividades">
+
+      <div class="card-atividade" data-trimestre="1 2 3">
+        <div class="midia-atividade">
+          <div class="imagem-faltando" role="img" aria-label="Imagem faltando">?</div>
+        </div>
+        <div class="info">
+          <div class="linha-topo">
+            <h4>Paixão segundo GH</h4>
+            <span class="badge entregue">2ª chamada</span>
+          </div>
+          <p class="descricao">Descreva aqui o que você fez nessa atividade e o que aprendeu.</p>
+        </div>
+      </div>
+
+      <div class="card-atividade" data-trimestre="1 2 3">
+        <div class="midia-atividade">
+          <div class="imagem-faltando" role="img" aria-label="Imagem faltando">?</div>
+        </div>
+        <div class="info">
+          <div class="linha-topo">
+            <h4>Game literario</h4>
+            <span class="badge realizada">Não entregue</span>
+          </div>
+          <p class="descricao">Descreva aqui o que você fez nessa atividade e o que aprendeu.</p>
+        </div>
+      </div>
+
+      <div class="card-atividade" data-trimestre="1 2 3">
+        <div class="midia-atividade">
+          <div class="imagem-faltando" role="img" aria-label="Imagem faltando">?</div>
+        </div>
+        <div class="info">
+          <div class="linha-topo">
+            <h4>Prova de Gramática</h4>
+            <span class="badge pendente">Pendente</span>
+          </div>
+          <p class="descricao">Descreva aqui o que você fez nessa atividade e o que aprendeu.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="card">
+      <h3>Minhas Observações</h3>
+      <p class="texto-apoio">Escreva aqui suas anotações sobre a matéria, dúvidas e pontos importantes para estudar.</p>
+    </div>
+
+  </div>
+
+  <!-- ========== ABA: CIÊNCIAS ========== -->
+  <div id="ciencias" class="secao">
+
+    <div class="materia-cabecalho">
+      <div>
+        <h2>Ciências</h2>
+        <p class="professor">Prof. Beux
+        <p class="professor">Prof. Romuel
+          <p class="professor">Prof. Ana
+        </p>
+       
+      </div>
+      <div class="media-box">
+        <span class="label">Média</span>
+        <span class="valor">--</span>
+      </div>
+    </div>
+
+    <div class="trimestres" aria-label="Trimestres de Ciências">
+      <button class="ativo" onclick="selecionarTrimestre(this, '1')">1º Trimestre</button>
+      <button onclick="selecionarTrimestre(this, '2')">2º Trimestre</button>
+      <button onclick="selecionarTrimestre(this, '3')">3º Trimestre</button>
+    </div>
+
+    <h3 class="titulo-secao">Atividades</h3>
+    <div class="grid-atividades">
+
+      <div class="card-atividade" data-trimestre="1 2 3">
+        <div class="midia-atividade">
+          <div class="imagem-faltando" role="img" aria-label="Imagem faltando">?</div>
+        </div>
+        <div class="info">
+          <div class="linha-topo">
+            <h4>Relatório de Experimento</h4>
+            <span class="badge entregue">Entregue</span>
+          </div>
+          <p class="descricao">Descreva aqui o que você fez nessa atividade e o que aprendeu.</p>
+        </div>
+      </div>
+
+      <div class="card-atividade" data-trimestre="1 2 3">
+        <div class="midia-atividade">
+          <div class="imagem-faltando" role="img" aria-label="Imagem faltando">?</div>
+        </div>
+        <div class="info">
+          <div class="linha-topo">
+            <h4>Prova Teórica</h4>
+            <span class="badge realizada">Realizada</span>
+          </div>
+          <p class="descricao">Descreva aqui o que você fez nessa atividade e o que aprendeu.</p>
+        </div>
+      </div>
+
+      <div class="card-atividade" data-trimestre="1 2 3">
+        <div class="midia-atividade">
+          <div class="imagem-faltando" role="img" aria-label="Imagem faltando">?</div>
+        </div>
+        <div class="info">
+          <div class="linha-topo">
+            <h4>Feira de Ciências</h4>
+            <span class="badge pendente">Pendente</span>
+          </div>
+          <p class="descricao">Descreva aqui o que você fez nessa atividade e o que aprendeu.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="card">
+      <h3>Minhas Observações</h3>
+      <p class="texto-apoio">Escreva aqui suas anotações sobre a matéria, dúvidas e pontos importantes para estudar.</p>
+    </div>
+
+  </div>
+
+  <!-- ========== ABA: HISTÓRIA ========== -->
+  <div id="historia" class="secao">
+
+    <div class="materia-cabecalho">
+      <div>
+        <h2>Humanas</h2>
+        <p class="professor">Prof. Bryan
+          <p class="professor">Prof. Marcus
+            <p class="professor">Prof. Lucas
+       
+      </div>
+      <div class="media-box">
+        <span class="label">Média</span>
+        <span class="valor">--</span>
+      </div>
+    </div>
+
+    <div class="trimestres" aria-label="Trimestres de Humanas">
+      <button class="ativo" onclick="selecionarTrimestre(this, '1')">1º Trimestre</button>
+      <button onclick="selecionarTrimestre(this, '2')">2º Trimestre</button>
+      <button onclick="selecionarTrimestre(this, '3')">3º Trimestre</button>
+    </div>
+
+    <h3 class="titulo-secao">Atividades</h3>
+    <div class="grid-atividades">
+
+      <div class="card-atividade" data-trimestre="1 2 3">
+        <div class="midia-atividade">
+          <div class="imagem-faltando" role="img" aria-label="Imagem faltando">?</div>
+        </div>
+        <div class="info">
+          <div class="linha-topo">
+            <h4>Linha do Tempo</h4>
+            <span class="badge entregue">Entregue</span>
+          </div>
+          <p class="descricao">Descreva aqui o que você fez nessa atividade e o que aprendeu.</p>
+        </div>
+      </div>
+
+      <div class="card-atividade" data-trimestre="1 2 3">
+        <div class="midia-atividade">
+          <div class="imagem-faltando" role="img" aria-label="Imagem faltando">?</div>
+        </div>
+        <div class="info">
+          <div class="linha-topo">
+            <h4>Prova Bimestral</h4>
+            <span class="badge realizada">Realizada</span>
+          </div>
+          <p class="descricao">Descreva aqui o que você fez nessa atividade e o que aprendeu.</p>
+        </div>
+      </div>
+
+      <div class="card-atividade" data-trimestre="1 2 3">
+        <div class="midia-atividade">
+          <div class="imagem-faltando" role="img" aria-label="Imagem faltando">?</div>
+        </div>
+        <div class="info">
+          <div class="linha-topo">
+            <h4>Seminário em Grupo</h4>
+            <span class="badge pendente">Pendente</span>
+          </div>
+          <p class="descricao">Descreva aqui o que você fez nessa atividade e o que aprendeu.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="card">
+      <h3>Minhas Observações</h3>
+      <p class="texto-apoio">Escreva aqui suas anotações sobre a matéria, dúvidas e pontos importantes para estudar.</p>
+    </div>
+
+  </div>
+
+  <!-- ========== ABA: tecnico===== -->
+  <div id="artes" class="secao">
+
+    <div class="materia-cabecalho">
+      <div>
+        <h2>Técnico</h2>
+        <p class="professor">Prof. João Ricardo
+         <p class="professor">Prof. Samuel
+          <p class="professor">Prof. Willer
+        
+      </div>
+      <div class="media-box">
+        <span class="label">Média</span>
+        <span class="valor">--</span>
+      </div>
+    </div>
+
+    <div class="trimestres" aria-label="Trimestres de Técnico">
+      <button class="ativo" onclick="selecionarTrimestre(this, '1')">1º Trimestre</button>
+      <button onclick="selecionarTrimestre(this, '2')">2º Trimestre</button>
+      <button onclick="selecionarTrimestre(this, '3')">3º Trimestre</button>
+    </div>
+
+    <h3 class="titulo-secao">Atividades</h3>
+    <div class="grid-atividades">
+
+      <div class="card-atividade" data-trimestre="1 2 3">
+        <div class="midia-atividade">
+          <div class="imagem-faltando" role="img" aria-label="Imagem faltando">?</div>
+        </div>
+        <div class="info">
+          <div class="linha-topo">
+            <h4>Grand Prix
+            <span class="badge pendente">Não participei
+          </div>
+          <p class="descricao"></p>
+        </div>
+      </div>
+
+      <div class="card-atividade" data-trimestre="1 2 3">
+        <div class="midia-atividade">
+          <div class="imagem-faltando" role="img" aria-label="Imagem faltando">?</div>
+        </div>
+        <div class="info">
+          <div class="linha-topo">
+            <h4>Grand Prix
+            <span class="badge pendente">Não participei
+          </div>
+          <p class="descricao"></p>
+        </div>
+      </div>
+
+      <div class="card-atividade" data-trimestre="1 2 3">
+        <div class="midia-atividade">
+          <div class="imagem-faltando" role="img" aria-label="Imagem faltando">?</div>
+        </div>
+        <div class="info">
+          <div class="linha-topo">
+            <h4>Grand Prix
+            <span class="badge pendente">Não participei
+          </div>
+          <p class="descricao"></p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="card">
+      <h3>Minhas Observações</h3>
+      <p class="texto-apoio">Escreva aqui suas anotações sobre a matéria, dúvidas e pontos importantes para estudar.</p>
+    </div>
+
+  </div>
+
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
