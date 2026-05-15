@@ -139,13 +139,14 @@ body::after {
   font-size: 14px;
   font-weight: 700;
   cursor: pointer;
-  transition: transform 0.2s ease, border-color 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+  transition: all .2s;
 }
 
-.abas button:hover {
-  transform: translateY(-1px);
+button:hover, .botaoa:hover {
+  transform: scale(1.02);
   border-color: var(--roxo-claro);
   color: var(--branco);
+  filter: saturate(1.5);
 }
 
 .abas button.ativo {
@@ -239,7 +240,7 @@ body::after {
   margin-bottom: 7px;
 }
 
-.botao-curriculo {
+#botao-curriculo, #botao-contrate {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -254,23 +255,13 @@ body::after {
   font-weight: 800;
   text-decoration: none;
   box-shadow: 0 10px 24px rgba(139, 61, 255, 0.28);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: all .2s;
 }
 
-.botao-curriculo:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 14px 30px rgba(139, 61, 255, 0.36);
-}
-
-
-.botao-contrate {
+#botao-contrate {
   margin-top: 10px;
   background: linear-gradient(135deg, #ffffff, var(--roxo-claro));
   color: var(--preto);
-}
-
-.botao-contrate:hover {
-  box-shadow: 0 14px 30px rgba(181, 140, 255, 0.32);
 }
 
 .coluna-dados {
@@ -396,12 +387,6 @@ li::marker {
   font-weight: 800;
   cursor: pointer;
   transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease, color 0.2s ease;
-}
-
-.trimestres button:hover {
-  transform: translateY(-1px);
-  border-color: var(--roxo-claro);
-  color: var(--branco);
 }
 
 .trimestres button.ativo {
