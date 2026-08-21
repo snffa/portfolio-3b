@@ -1,515 +1,857 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfólio Escolar</title>
-  <link rel="stylesheet" href="/style.css" />
-</head>
-<body>
-
-<div class="container">
-
-  <!-- Cabeçalho -->
-  <div class="cabecalho">
-    <h1>Portfólio </h1>
-    <p>3º Ano — Turma B — Escola Sesi Senai</p>
-  </div>
-
-  <!-- Abas de navegação -->
-  <div class="abas">
-    <button class="ativo" onclick="mostrarAba('info', this)">Informações</button>
-    <button onclick="mostrarAba('matematica', this)">Matemática</button>
-    <button onclick="mostrarAba('portugues', this)">Português</button>
-    <button onclick="mostrarAba('ciencias', this)">Natureza</button>
-    <button onclick="mostrarAba('historia', this)">Humanas</button>
-    <button onclick="mostrarAba('artes', this)">Técnico</button>
-  </div>
-
-  <!-- ========== ABA: INFORMAÇÕES ========== -->
-  <div id="info" class="secao ativa">
-    <div class="layout-info">
-
-      <!-- Foto e contato -->
-      <div class="coluna-foto">
-        <img src="images/foto-perfil.jpg" alt="Foto de perfil" />
-        <h2>Pedro Leite Fiuza</h2>
-        <p class="subtitulo">Estudante</p>
-        <hr />
-        <div class="contato">
-          <p>pleitefiuza@gmail.com</p>
-          <p>(48) 99102-8768</p>
-          <p>Florianópolis, Santa Catarina</p>
-        </div>
-        <a class="botaoa" id="botao-curriculo" href="https://docs.google.com/document/d/19PiPzctgO_L4TtTs3SZFuLiRfalymlvcDyf2OtDeMJI/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Currículo Vitae</a>
-        <a class="botaoa" id="botao-contrate" href="https://www.instagram.com/pfiu.za/" target="_blank" rel="noopener noreferrer">Me Contrate</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio Escolar</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="cabecalho">
+        <h1>Portfólio</h1>
+        <p>3º Ano — Turma B — Escola Sesi Senai</p>
       </div>
 
-      <!-- Dados e metas -->
-      <div class="coluna-dados">
+      <div class="abas">
+        <button class="ativo" onclick="mostrarAba('info', this)">
+          Informações
+        </button>
+        <button onclick="mostrarAba('matematica', this)">Matemática</button>
+        <button onclick="mostrarAba('portugues', this)">Português</button>
+        <button onclick="mostrarAba('ciencias', this)">Natureza</button>
+        <button onclick="mostrarAba('historia', this)">Humanas</button>
+        <button onclick="mostrarAba('artes', this)">Técnico</button>
+      </div>
+
+      <div id="info" class="secao ativa">
+        <div class="layout-info">
+          <div class="coluna-foto">
+            <img src="images/foto-perfil.jpg" alt="Foto de perfil" />
+            <h2>Pedro Leite Fiuza</h2>
+            <p class="subtitulo">Estudante</p>
+            <hr />
+            <div class="contato">
+              <p>pleitefiuza@gmail.com</p>
+              <p>(48) 99102-8768</p>
+              <p>Florianópolis, Santa Catarina</p>
+            </div>
+            <a
+              class="botaoa"
+              id="botao-curriculo"
+              href="https://docs.google.com/document/d/19PiPzctgO_L4TtTs3SZFuLiRfalymlvcDyf2OtDeMJI/edit?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Currículo Vitae</a
+            >
+            <a
+              class="botaoa"
+              id="botao-contrate"
+              href="https://www.instagram.com/pfiu.za/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Me Contrate</a
+            >
+          </div>
+
+          <div class="coluna-dados">
+            <div class="card">
+              <h3>Sobre Mim</h3>
+              <p class="texto-apoio">
+                Meu nome é <b>Pedro Leite Fiuza</b>, sou de Florianópolis. Nasci
+                em 22 de Abril de 2008.<br />
+                Estudei no Colégio Cruz e Sousa e agora no <b>SESI SENAI</b>,
+                comecei no Cruz e Sousa em 2015 com 7 anos e estudei desde o 1
+                ano até o 9, fiz alguns amigos, vim para a escola SESI pois o
+                ensino é melhor. Pretendo trabalhar no ramo da programação,
+                Front-end ou Back-end.<br />
+                Sou um aluno que está na média, tenho uma grande facilidade em
+                aprender coisas relacionadas a meus interesses.<br />
+                Gosto de jogar videogames, andar de skate, bicicleta, ficar sem
+                fazer nada, ouvir músicas. Tenho certificado de proficiência em
+                inglês nível B2 de nota CEFR europeu pela universidade de
+                Cambridge.
+              </p>
+            </div>
+
+            <div class="card">
+              <h3>Dados Escolares</h3>
+              <table>
+                <tr>
+                  <td>Escola</td>
+                  <td>Sesi Senai</td>
+                </tr>
+                <tr>
+                  <td>Turma</td>
+                  <td>3º Ano — Turma B</td>
+                </tr>
+              </table>
+            </div>
+
+            <div class="card">
+              <h3>Minhas Metas</h3>
+              <ol>
+                <li>Passar de ano.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="matematica" class="secao">
+        <div class="materia-cabecalho">
+          <div>
+            <h2>Matemática</h2>
+            <p class="professor">Prof. Luciano</p>
+            <p class="descricao-materia"></p>
+          </div>
+          <div class="media-box">
+            <span class="label">Média</span>
+            <span class="valor">--</span>
+          </div>
+        </div>
+
+        <div class="trimestres" aria-label="Trimestres de Matemática">
+          <button class="ativo" onclick="selecionarTrimestre(this, '1')">
+            1º Trimestre
+          </button>
+          <button onclick="selecionarTrimestre(this, '2')">2º Trimestre</button>
+          <button onclick="selecionarTrimestre(this, '3')">3º Trimestre</button>
+          <button onclick="selecionarTrimestre(this, 'recomposicao')">
+            RECOMPOSIÇÃO DE APRENDIZAGEM
+          </button>
+        </div>
+
+        <h3 class="titulo-secao">Atividades</h3>
+        <div class="grid-atividades">
+          <div class="card-atividade" data-trimestre="1">
+            <div class="midia-atividade">
+              <a
+                href="https://canva.link/ekcj2v8w45y0dls"
+                target="_blank"
+                title="Visitar atividade Quebrando a Banca"
+              >
+                <img
+                  class="imagem-atividade"
+                  src="images/quebrando a banca.jpg"
+                  alt="Atividade Filme Quebrando a Banca"
+                />
+              </a>
+            </div>
+            <div class="info">
+              <div class="linha-topo">
+                <h4>Atividade Filme Quebrando a Banca</h4>
+                <span class="badge entregue">Entregue</span>
+              </div>
+              <p class="descricao">Competencias:C5.</p>
+              <p class="descricao">Habilidades: H31, H32</p>
+            </div>
+          </div>
+
+          <div class="card-atividade" data-trimestre="1">
+            <div class="midia-atividade">
+              <a
+                href="https://arenajogopedro3b.netlify.app"
+                target="_blank"
+                title="Visitar atividade jogo"
+              >
+                <img
+                  class="imagem-atividade"
+                  src="images/tmt.png"
+                  alt="Atividade jogo"
+                />
+              </a>
+            </div>
+            <div class="info">
+              <div class="linha-topo">
+                <h4>jogo</h4>
+                <span class="badge entregue">Entregue</span>
+              </div>
+              <p class="descricao">Competencias:C5.</p>
+              <p class="descricao">Habilidades: H30, H31</p>
+            </div>
+          </div>
+
+          <div class="card-atividade" data-trimestre="1 2"></div>
+
+          <div class="card-atividade oculta" data-trimestre="3">
+            <div class="midia-atividade">
+              <div
+                class="imagem-faltando"
+                role="img"
+                aria-label="Imagem faltando"
+              >
+                ?
+              </div>
+            </div>
+            <div class="info">
+              <div class="linha-topo">
+                <h4>AV1 - Apresentação Estatística</h4>
+                <span class="badge pendente">Não fiz</span>
+              </div>
+              <p class="descricao">Competencias: C4</p>
+              <p class="descricao">Habilidades: H27, H28, H29</p>
+            </div>
+          </div>
+
+          <div
+            class="card-atividade card-recomposicao oculta"
+            data-trimestre="recomposicao"
+          >
+            <div class="info">
+              <div class="linha-topo">
+                <h4>RECOMPOSIÇÃO DE APRENDIZAGEM</h4>
+                <span class="badge pendente">Pendente</span>
+              </div>
+              <p class="descricao">Nenhuma atividade cadastrada ainda.</p>
+            </div>
+          </div>
+        </div>
 
         <div class="card">
-          <h3>Sobre Mim</h3>
-          <p class="texto-apoio">
-            Meu nome é <b>Pedro Leite Fiuza</b>, sou de Florianópolis. Nasci em 22 de Abril de 2008.<br>
-  Estudei no Colégio Cruz e Sousa e agora no <b>SESI SENAI</b>, comecei no Cruz e Sousa em 2015 com 7 anos e estudei desde o 1 ano até o 9, fiz alguns amigos, vim para a escola SESI pois o ensino é melhor.
- Pretendo trabalhar no ramo da programação, Front-end ou Back-end.<br>
- Sou um aluno que está na média, tenho uma grande facilidade em aprender coisas relacionadas a meus interesses.<br>
-  Gosto de jogar videogames, andar de skate, bicicleta, ficar sem fazer nada, ouvir músicas.
-  Tenho certificado de proficiência em inglês nível B2 de nota CEFR europeu pela universidade de Cambridge.
-          </p>
+          <h3>Minhas Observações</h3>
+          <p class="texto-apoio"></p>
+        </div>
+      </div>
+
+      <div id="portugues" class="secao">
+        <div class="materia-cabecalho">
+          <div>
+            <h2>Linguagens</h2>
+            <p class="professor">Prof. Claudia</p>
+            <p class="professor">Prof. Natali</p>
+            <p class="descricao-materia"></p>
+          </div>
+          <div class="media-box">
+            <span class="label">Média</span>
+            <span class="valor">--</span>
+          </div>
+        </div>
+
+        <div class="trimestres" aria-label="Trimestres de Linguagens">
+          <button class="ativo" onclick="selecionarTrimestre(this, '1')">
+            1º Trimestre
+          </button>
+          <button onclick="selecionarTrimestre(this, '2')">2º Trimestre</button>
+          <button onclick="selecionarTrimestre(this, '3')">3º Trimestre</button>
+          <button onclick="selecionarTrimestre(this, 'recomposicao')">
+            RECOMPOSIÇÃO DE APRENDIZAGEM
+          </button>
+        </div>
+
+        <h3 class="titulo-secao">Atividades</h3>
+        <div class="grid-atividades">
+          <div class="card-atividade" data-trimestre="1">
+            <div class="midia-atividade">
+              <img
+                class="imagem-atividade"
+                src="images/av1.jpeg"
+                alt="Atividade Paixão segundo GH"
+              />
+            </div>
+            <div class="info">
+              <div class="linha-topo">
+                <h4>Paixão segundo GH</h4>
+                <span class="badge entregue">2ª chamada</span>
+              </div>
+              <p class="descricao">Competencias:?</p>
+              <p class="descricao">Habilidades H4, H22</p>
+            </div>
+          </div>
+
+          <div class="card-atividade" data-trimestre="1">
+            <div class="midia-atividade">
+              <a
+                href="https://wordwall.net/pt/resource/115193657"
+                target="_blank"
+                title="Visitar atividade Game literario"
+              >
+                <img
+                  class="imagem-atividade"
+                  src="images/game-literario.png"
+                  alt="Atividade Game literario"
+                />
+              </a>
+            </div>
+            <div class="info">
+              <div class="linha-topo">
+                <h4>Game literario</h4>
+                <span class="badge entregue">Entregue RA</span>
+              </div>
+              <p class="descricao">Competencias:?</p>
+              <p class="descricao">Habilidades H15</p>
+            </div>
+          </div>
+
+          <div class="card-atividade oculta" data-trimestre="1"></div>
+
+          <div class="card-atividade oculta" data-trimestre="2"></div>
+
+          <div class="card-atividade oculta" data-trimestre="3">
+            <div class="midia-atividade">
+              <div
+                class="imagem-faltando"
+                role="img"
+                aria-label="Imagem faltando"
+              >
+                ?
+              </div>
+            </div>
+            <div class="info">
+              <div class="linha-topo">
+                <h4>Manifesto</h4>
+                <span class="badge pendente">Não fiz</span>
+              </div>
+              <p class="descricao">Competencias: ?</p>
+              <p class="descricao">Habilidades: H3, H24</p>
+            </div>
+          </div>
+
+          <div class="card-atividade oculta" data-trimestre="3">
+            <div class="midia-atividade">
+              <a
+                href="https://docs.google.com/document/d/1yLQvC6boYQ7LiL68-INFhkAWMzU5Pb5-91zk4XOFT9Q/edit?usp=sharing"
+                target="_blank"
+                title="Visitar atividade Arte que você consome"
+              >
+                <img
+                  class="imagem-atividade"
+                  src="images/art.png"
+                  alt="arte que consome"
+                />
+              </a>
+            </div>
+            <div class="info">
+              <div class="linha-topo">
+                <h4>Arte que você consome</h4>
+                <span class="badge entregue">Entregue</span>
+              </div>
+              <p class="descricao">Competencias:?</p>
+              <p class="descricao">Habilidades H25</p>
+            </div>
+          </div>
+
+          <div class="card-atividade oculta" data-trimestre="3">
+            <div class="midia-atividade">
+              <div
+                class="imagem-faltando"
+                role="img"
+                aria-label="Imagem faltando"
+              >
+                ?
+              </div>
+            </div>
+            <div class="info">
+              <div class="linha-topo">
+                <h4>Redação RED1000</h4>
+                <span class="badge pendente">Não fiz</span>
+              </div>
+              <p class="descricao">Competencias: ?</p>
+              <p class="descricao">Habilidades: H22</p>
+            </div>
+          </div>
+
+          <div
+            class="card-atividade card-recomposicao oculta"
+            data-trimestre="recomposicao"
+          >
+            <div class="midia-atividade">
+              <a
+                href="images/certificado-produtividade-enap.pdf"
+                target="_blank"
+                title="Abrir certificado em PDF"
+              >
+                <img
+                  class="imagem-atividade certificado-preview"
+                  src="images/certificado-produtividade-enap.png"
+                  alt="Certificado ENAP de estratégias de produtividade"
+                />
+              </a>
+            </div>
+            <div class="info">
+              <div class="linha-topo">
+                <h4>Certificado ENAP - Estratégias de produtividade</h4>
+                <span class="badge entregue">Entregue</span>
+              </div>
+              <p class="descricao">
+                Curso concluído em 19/06/2026, com carga horária de 25 horas e
+                nota final 95.
+              </p>
+              <div class="acoes-atividade">
+                <a
+                  class="botao-arquivo"
+                  href="images/certificado-produtividade-enap.pdf"
+                  target="_blank"
+                  >Abrir PDF</a
+                >
+                <a
+                  class="botao-arquivo"
+                  href="images/certificado-produtividade-enap.png"
+                  target="_blank"
+                  >Ver imagem</a
+                >
+              </div>
+              <iframe
+                class="pdf-atividade"
+                src="images/certificado-produtividade-enap.pdf"
+                title="Visualização do certificado ENAP em PDF"
+              ></iframe>
+            </div>
+          </div>
         </div>
 
         <div class="card">
-          <h3>Dados Escolares</h3>
-          <table>
-            <tr><td>Escola</td><td>Sesi Senai</td></tr>
-            <tr><td>Turma</td><td>3º Ano — Turma B</td></tr>
-            
-          </table>
+          <h3>Minhas Observações</h3>
+          <p class="texto-apoio"></p>
+        </div>
+      </div>
+
+      <div id="ciencias" class="secao">
+        <div class="materia-cabecalho">
+          <div>
+            <h2>Ciências</h2>
+            <p class="professor">Prof. Beux</p>
+            <p class="professor">Prof. Romuel</p>
+            <p class="professor">Prof. Ana</p>
+            <p class="descricao-materia"></p>
+          </div>
+          <div class="media-box">
+            <span class="label">Média</span>
+            <span class="valor">--</span>
+          </div>
+        </div>
+
+        <div class="trimestres" aria-label="Trimestres de Ciências">
+          <button class="ativo" onclick="selecionarTrimestre(this, '1')">
+            1º Trimestre
+          </button>
+          <button onclick="selecionarTrimestre(this, '2')">2º Trimestre</button>
+          <button onclick="selecionarTrimestre(this, '3')">3º Trimestre</button>
+          <button onclick="selecionarTrimestre(this, 'recomposicao')">
+            RECOMPOSIÇÃO DE APRENDIZAGEM
+          </button>
+        </div>
+
+        <h3 class="titulo-secao">Atividades</h3>
+        <div class="grid-atividades">
+          <div class="card-atividade" data-trimestre="1">
+            <div class="midia-atividade">
+              <div
+                class="imagem-faltando"
+                role="img"
+                aria-label="Imagem faltando"
+              >
+                ?
+              </div>
+            </div>
+            <div class="info">
+              <div class="linha-topo">
+                <h4>Meme Evolucionista</h4>
+                <span class="badge pendente">Não fiz</span>
+              </div>
+              <p class="descricao">Competencias: C3</p>
+              <p class="descricao">Habilidades: H15, H18</p>
+            </div>
+          </div>
+
+          <div class="card-atividade" data-trimestre="1">
+            <div class="midia-atividade">
+              <a
+                href="https://canva.link/dw4srmbrlcj9p7o"
+                target="_blank"
+                title="Atividade Economia e Poder"
+              >
+                <img
+                  class="imagem-atividade"
+                  src="images/Economia e Poder - NATUREZA.jpg"
+                  alt="Atividade Paixão segundo GH"
+                />
+              </a>
+            </div>
+            <div class="info">
+              <div class="linha-topo">
+                <h4>Economia e poder</h4>
+                <span class="badge entregue">Entregue</span>
+              </div>
+              <p class="descricao">Competencias:C1, C2</p>
+              <p class="descricao">Habilidades: H1, H9, H11</p>
+            </div>
+          </div>
+
+          <div class="card-atividade" data-trimestre="1">
+            <div class="midia-atividade">
+              <a
+                href="https://docs.google.com/document/d/14-TmwoQqN0jcJmEyFllVC6wZLo2KYMDTgtTUJd7n2Ng/edit?usp=sharing"
+                target="_blank"
+                title="Disputa Elétrica"
+              >
+                <img class="imagem-atividade" src="images/atomo.png" />
+              </a>
+            </div>
+            <div class="info">
+              <div class="linha-topo">
+                <h4>Disputa Elétrica</h4>
+                <span class="badge entregue">Entregue</span>
+              </div>
+              <p class="descricao">Competencias: C1, C2</p>
+              <p class="descricao">Habilidades: H1, H7, H9, H11, H12</p>
+            </div>
+          </div>
+
+          <div class="card-atividade oculta" data-trimestre="3">
+            <div class="midia-atividade">
+              <div
+                class="imagem-faltando"
+                role="img"
+                aria-label="Imagem faltando"
+              >
+                ?
+              </div>
+            </div>
+            <div class="info">
+              <div class="linha-topo">
+                <h4>Mural Interativo</h4>
+                <span class="badge pendente">Não fiz</span>
+              </div>
+              <p class="descricao">Competencias: C2, C3, C4</p>
+              <p class="descricao">Habilidades: H23</p>
+            </div>
+          </div>
+
+          <div class="card-atividade oculta" data-trimestre="3">
+            <div class="midia-atividade">
+              <a
+                href="https://canva.link/hn7azqh9jvbds61"
+                target="_blank"
+                title="Apresentação Estequiometria na Indústria"
+              >
+                <img
+                  class="imagem-atividade"
+                  src="images/esteq.png"
+                  alt="Atividade Paixão segundo GH"
+                />
+              </a>
+            </div>
+            <div class="info">
+              <div class="linha-topo">
+                <h4>Apresentação: Estequiometria na Indústria</h4>
+                <span class="badge entregue">Entregue</span>
+              </div>
+              <p class="descricao">Competencias:C2</p>
+              <p class="descricao">Habilidades: H6, H7, H9</p>
+            </div>
+          </div>
+
+          <div class="card-atividade oculta" data-trimestre="3">
+            <div class="midia-atividade">
+              <a
+                href="https://docs.google.com/document/d/1i_xzyMLJNMivfW98j5UOGr18SUQcWd2_o_ZD0vc0XHQ/edit?usp=sharing"
+                target="_blank"
+                title="Eletricidade e o Corpo Humano"
+              >
+                <img class="imagem-atividade" src="images/eletr.png" />
+              </a>
+            </div>
+            <div class="info">
+              <div class="linha-topo">
+                <h4>Eletricidade e o Corpo Humano</h4>
+                <span class="badge entregue">Entregue</span>
+              </div>
+              <p class="descricao">Competencias: C1, C2, C4</p>
+              <p class="descricao">Habilidades: H3, H4, H12, H23</p>
+            </div>
+          </div>
+
+          <div class="card-atividade oculta" data-trimestre="2"></div>
+
+          <div
+            class="card-atividade card-recomposicao oculta"
+            data-trimestre="recomposicao"
+          >
+            <div class="info">
+              <div class="linha-topo">
+                <h4>RECOMPOSIÇÃO DE APRENDIZAGEM</h4>
+                <span class="badge pendente">Pendente</span>
+              </div>
+              <p class="descricao">Nenhuma atividade cadastrada ainda.</p>
+            </div>
+          </div>
         </div>
 
         <div class="card">
-          <h3>Minhas Metas</h3>
-          <ol>
-            <li>Passar de ano.</li>
-            
-          </ol>
+          <h3>Minhas Observações</h3>
+          <p class="texto-apoio"></p>
         </div>
-
       </div>
-    </div>
-  </div>
 
-  <!-- ========== ABA: MATEMÁTICA ========== -->
-  <div id="matematica" class="secao">
-
-    <div class="materia-cabecalho">
-      <div>
-        <h2>Matemática</h2>
-        <p class="professor">Prof. Luciano</p>
-        <p class="descricao-materia"></p>
-      </div>
-      <div class="media-box">
-        <span class="label">Média</span>
-        <span class="valor">--</span>
-      </div>
-    </div>
-
-    <div class="trimestres" aria-label="Trimestres de Matemática">
-      <button class="ativo" onclick="selecionarTrimestre(this, '1')">1º Trimestre</button>
-      <button onclick="selecionarTrimestre(this, '2')">2º Trimestre</button>
-      <button onclick="selecionarTrimestre(this, '3')">3º Trimestre</button>
-      <button onclick="selecionarTrimestre(this, 'recomposicao')">RECOMPOSIÇÃO DE APRENDIZAGEM</button>
-    </div>
-
-    <h3 class="titulo-secao">Atividades</h3>
-    <div class="grid-atividades">
-
-      <div class="card-atividade" data-trimestre="1 2 3">
-        <div class="midia-atividade">
-          <a href="https://canva.link/ekcj2v8w45y0dls" target="_blank" title="Visitar atividade Quebrando a Banca">
-            <img class="imagem-atividade" src="images/quebrando a banca.jpg" alt="Atividade Filme Quebrando a Banca" />
-          </a>
-        </div>
-        <div class="info">
-          <div class="linha-topo">
-            <h4>Atividade Filme Quebrando a Banca</h4>
-            <span class="badge entregue">Entregue</span>
+      <div id="historia" class="secao">
+        <div class="materia-cabecalho">
+          <div>
+            <h2>Humanas</h2>
+            <p class="professor">Prof. Bryan</p>
+            <p class="professor">Prof. Marcus</p>
+            <p class="professor">Prof. Lucas</p>
+            <p class="descricao-materia"></p>
           </div>
-          <p class="descricao">Competencias:C5.</p>
-          <p class="descricao">Habilidades: H31, H32</p>
-        </div>
-      </div>
-
-      <div class="card-atividade" data-trimestre="1 2 3">
-        <div class="midia-atividade">
-          <a href="https://arenajogopedro3b.netlify.app" target="_blank" title="Visitar atividade jogo">
-            <img class="imagem-atividade" src="images/tmt.png" alt="Atividade jogo" />
-          </a>
-        </div>
-        <div class="info">
-          <div class="linha-topo">
-            <h4>jogo</h4>
-            <span class="badge entregue">Entregue</span>
+          <div class="media-box">
+            <span class="label">Média</span>
+            <span class="valor">--</span>
           </div>
-          <p class="descricao">Competencias:C5.</p>
-          <p class="descricao">Habilidades: H30, H31</p>
         </div>
-      </div>
 
-      <div class="card-atividade" data-trimestre="1 2 3">
-       
-        
-      </div>
+        <div class="trimestres" aria-label="Trimestres de Humanas">
+          <button class="ativo" onclick="selecionarTrimestre(this, '1')">
+            1º Trimestre
+          </button>
+          <button onclick="selecionarTrimestre(this, '2')">2º Trimestre</button>
+          <button onclick="selecionarTrimestre(this, '3')">3º Trimestre</button>
+          <button onclick="selecionarTrimestre(this, 'recomposicao')">
+            RECOMPOSIÇÃO DE APRENDIZAGEM
+          </button>
+        </div>
 
-      <div class="card-atividade card-recomposicao oculta" data-trimestre="recomposicao">
-        <div class="info">
-          <div class="linha-topo">
-            <h4>RECOMPOSIÇÃO DE APRENDIZAGEM</h4>
-            <span class="badge pendente">Pendente</span>
+        <h3 class="titulo-secao">Atividades</h3>
+        <div class="grid-atividades">
+          <div class="card-atividade" data-trimestre="1">
+            <div class="midia-atividade">
+              <a
+                href="https://docs.google.com/document/d/1lIiNK-RLreW2rf0pG4W3bI1jc15rrp0misjxRI21cD8/edit?usp=sharing"
+                target="_blank"
+                title="Visitar atividade seculo xx"
+              >
+                <img
+                  class="imagem-atividade"
+                  src="images/atv.png"
+                  alt="Atividade O Breve Século XX"
+                />
+              </a>
+            </div>
+            <div class="info">
+              <div class="linha-topo">
+                <h4>O Breve Século XX</h4>
+                <span class="badge entregue">Entregue</span>
+              </div>
+              <p class="descricao">Competencias: C3</p>
+              <p class="descricao">Habilidades: H15, H16, H20</p>
+            </div>
           </div>
-          <p class="descricao">Nenhuma atividade cadastrada ainda.</p>
-        </div>
-      </div>
 
-    </div>
-
-    <div class="card">
-      <h3>Minhas Observações</h3>
-      <p class="texto-apoio"></p>
-    </div>
-
-  </div>
-
-  <!-- ========== ABA: PORTUGUÊS ========== -->
-  <div id="portugues" class="secao">
-
-    <div class="materia-cabecalho">
-      <div>
-        <h2>Linguagens</h2>
-        <p class="professor">Prof. Claudia</p>
-         <p class="professor">Prof. Natali</p>
-        <p class="descricao-materia"></p>
-      </div>
-      <div class="media-box">
-        <span class="label">Média</span>
-        <span class="valor">--</span>
-      </div>
-    </div>
-
-    <div class="trimestres" aria-label="Trimestres de Linguagens">
-      <button class="ativo" onclick="selecionarTrimestre(this, '1')">1º Trimestre</button>
-      <button onclick="selecionarTrimestre(this, '2')">2º Trimestre</button>
-      <button onclick="selecionarTrimestre(this, '3')">3º Trimestre</button>
-      <button onclick="selecionarTrimestre(this, 'recomposicao')">RECOMPOSIÇÃO DE APRENDIZAGEM</button>
-    </div>
-
-    <h3 class="titulo-secao">Atividades</h3>
-    <div class="grid-atividades">
-
-      <div class="card-atividade" data-trimestre="1 2 3">
-        <div class="midia-atividade">
-        <img class="imagem-atividade" src="images/av1.jpeg" alt="Atividade Paixão segundo GH" />
-        </div>
-        <div class="info">
-          <div class="linha-topo">
-            <h4>Paixão segundo GH</h4>
-            <span class="badge entregue">2ª chamada</span>
+          <div class="card-atividade" data-trimestre="1">
+            <div class="midia-atividade">
+              <a
+                href="https://canva.link/2ox2auzg57dez0q"
+                target="_blank"
+                title="european chronicle"
+              >
+                <img
+                  class="imagem-atividade"
+                  src="images/THE EUROPEAN CHRONICLE.png"
+                  alt="Imagem da atividade The European Chronicle"
+                />
+              </a>
+            </div>
+            <div class="info">
+              <div class="linha-topo">
+                <h4>THE EUROPEAN CHRONICLE</h4>
+                <span class="badge entregue">Entregue</span>
+              </div>
+              <p class="descricao">Competencias: C3</p>
+              <p class="descricao">Habilidades: H15, H16, H20</p>
+            </div>
           </div>
-          <p class="descricao">Competencias:?</p>
-          <p class="descricao">Habilidades H4, H22</p>
-        </div>
-      </div>
 
-      <div class="card-atividade" data-trimestre="1 2 3">
-        <div class="midia-atividade">
-          <a href="https://wordwall.net/pt/resource/115193657" target="_blank" title="Visitar atividade Game literario">
-            <img class="imagem-atividade" src="images/game-literario.png" alt="Atividade Game literario" />
-          </a>
-        </div>
-        <div class="info">
-          <div class="linha-topo">
-            <h4>Game literario</h4>
-            <span class="badge entregue">Entregue RA</span>
+          <div class="card-atividade" data-trimestre="1"></div>
+
+          <div class="card-atividade oculta" data-trimestre="3">
+            <div class="midia-atividade">
+              <a
+                href="https://canva.link/u4johmdkocrdys8"
+                target="_blank"
+                title="Dossie Historico - Holocausto"
+              >
+                <img
+                  class="imagem-atividade"
+                  src="images/holo.png"
+                  alt="Dossie Historico - Holocausto"
+                />
+              </a>
+            </div>
+            <div class="info">
+              <div class="linha-topo">
+                <h4>Dossiê Histórico - Holocausto</h4>
+                <span class="badge entregue">Entregue</span>
+              </div>
+              <p class="descricao">Competencias: ?</p>
+              <p class="descricao">Habilidades: ?</p>
+            </div>
           </div>
-          <p class="descricao">Competencias:?</p>
-          <p class="descricao">Habilidades H15</p>
-        </div>
-      </div>
 
-      <div class="card-atividade" data-trimestre="1 2 3">
-       
-      </div>
-
-      <div class="card-atividade card-recomposicao oculta" data-trimestre="recomposicao">
-        <div class="midia-atividade">
-          <a href="images/certificado-produtividade-enap.pdf" target="_blank" title="Abrir certificado em PDF">
-            <img class="imagem-atividade certificado-preview" src="images/certificado-produtividade-enap.png" alt="Certificado ENAP de estratégias de produtividade" />
-          </a>
-        </div>
-        <div class="info">
-          <div class="linha-topo">
-            <h4>Certificado ENAP - Estratégias de produtividade</h4>
-            <span class="badge entregue">Entregue</span>
+          <div class="card-atividade oculta" data-trimestre="3">
+            <div class="midia-atividade">
+              <a
+                href="https://docs.google.com/document/d/106CZxoDU7BhgxmbsPUaPBHQmAvcskvjrN1psK-vkxvE/edit?usp=sharing"
+                target="_blank"
+                title="O Holocausto e a Desumanização"
+              >
+                <img
+                  class="imagem-atividade"
+                  src="images/desum.png"
+                  alt="É isto um homem?"
+                />
+              </a>
+            </div>
+            <div class="info">
+              <div class="linha-topo">
+                <h4>O Holocausto e a Desumanização</h4>
+                <span class="badge entregue">Entregue</span>
+              </div>
+              <p class="descricao">Competencias: C3</p>
+              <p class="descricao">Habilidades: H15, H16, H20</p>
+            </div>
           </div>
-          <p class="descricao">Curso concluído em 19/06/2026, com carga horária de 25 horas e nota final 95.</p>
-          <div class="acoes-atividade">
-            <a class="botao-arquivo" href="images/certificado-produtividade-enap.pdf" target="_blank">Abrir PDF</a>
-            <a class="botao-arquivo" href="images/certificado-produtividade-enap.png" target="_blank">Ver imagem</a>
+
+          <div class="card-atividade oculta" data-trimestre="3"></div>
+
+          <div class="card-atividade oculta" data-trimestre="2"></div>
+
+          <div
+            class="card-atividade card-recomposicao oculta"
+            data-trimestre="recomposicao"
+          >
+            <div class="info">
+              <div class="linha-topo">
+                <h4>RECOMPOSIÇÃO DE APRENDIZAGEM</h4>
+                <span class="badge pendente">Pendente</span>
+              </div>
+              <p class="descricao">Nenhuma atividade cadastrada ainda.</p>
+            </div>
           </div>
-          <iframe class="pdf-atividade" src="images/certificado-produtividade-enap.pdf" title="Visualização do certificado ENAP em PDF"></iframe>
+        </div>
+
+        <div class="card">
+          <h3>Minhas Observações</h3>
+          <p class="texto-apoio"></p>
         </div>
       </div>
 
-    </div>
-
-    <div class="card">
-      <h3>Minhas Observações</h3>
-      <p class="texto-apoio"></p>
-    </div>
-
-  </div>
-
-  <!-- ========== ABA: CIÊNCIAS ========== -->
-  <div id="ciencias" class="secao">
-
-    <div class="materia-cabecalho">
-      <div>
-        <h2>Ciências</h2>
-        <p class="professor">Prof. Beux</p>
-        <p class="professor">Prof. Romuel</p>
-        <p class="professor">Prof. Ana</p>
-        <p class="descricao-materia"></p>
-      </div>
-      <div class="media-box">
-        <span class="label">Média</span>
-        <span class="valor">--</span>
-      </div>
-    </div>
-
-    <div class="trimestres" aria-label="Trimestres de Ciências">
-      <button class="ativo" onclick="selecionarTrimestre(this, '1')">1º Trimestre</button>
-      <button onclick="selecionarTrimestre(this, '2')">2º Trimestre</button>
-      <button onclick="selecionarTrimestre(this, '3')">3º Trimestre</button>
-      <button onclick="selecionarTrimestre(this, 'recomposicao')">RECOMPOSIÇÃO DE APRENDIZAGEM</button>
-    </div>
-
-    <h3 class="titulo-secao">Atividades</h3>
-    <div class="grid-atividades">
-
-      <div class="card-atividade" data-trimestre="1 2 3">
-        <div class="midia-atividade">
-          <div class="imagem-faltando" role="img" aria-label="Imagem faltando">?</div>
-        </div>
-        <div class="info">
-          <div class="linha-topo">
-            <h4>Meme Evolucionista</h4>
-            <span class="badge pendente">Não fiz</span>
+      <div id="artes" class="secao">
+        <div class="materia-cabecalho">
+          <div>
+            <h2>Técnico</h2>
+            <p class="professor">Prof. João Ricardo</p>
+            <p class="professor">Prof. Samuel</p>
+            <p class="professor">Prof. Willer</p>
+            <p class="descricao-materia"></p>
           </div>
-          <p class="descricao">Competencias: C3</p>
-          <p class="descricao">Habilidades: H15, H18</p>
-        </div>
-      </div>
-
-      <div class="card-atividade" data-trimestre="1 2 3">
-        <div class="midia-atividade">
-          <a href="https://canva.link/dw4srmbrlcj9p7o" target="_blank" title="Atividade Economia e Poder">
-        <img class="imagem-atividade" src="images/Economia e Poder - NATUREZA.jpg" alt="Atividade Paixão segundo GH" />  </a>      </div>
-        <div class="info">
-          <div class="linha-topo">
-            <h4>Economia e poder</h4>
-            <span class="badge entregue">Entregue</span>
+          <div class="media-box">
+            <span class="label">Média</span>
+            <span class="valor">--</span>
           </div>
-          <p class="descricao">Competencias:C1, C2</p>
-          <p class="descricao">Habilidades: H1, H9, H11</p>
         </div>
-      </div>
 
-      <div class="card-atividade" data-trimestre="1 2 3">
-        <div class="midia-atividade">
-          <a href="https://docs.google.com/document/d/14-TmwoQqN0jcJmEyFllVC6wZLo2KYMDTgtTUJd7n2Ng/edit?usp=sharing" target="_blank" title="Disputa Elétrica">
-          <img class="imagem-atividade" src="images/atomo.png">
-          </a>
+        <div class="trimestres" aria-label="Trimestres de Técnico">
+          <button class="ativo" onclick="selecionarTrimestre(this, '1')">
+            1º Trimestre
+          </button>
+          <button onclick="selecionarTrimestre(this, '2')">2º Trimestre</button>
+          <button onclick="selecionarTrimestre(this, '3')">3º Trimestre</button>
+          <button onclick="selecionarTrimestre(this, 'recomposicao')">
+            RECOMPOSIÇÃO DE APRENDIZAGEM
+          </button>
         </div>
-        <div class="info">
-          <div class="linha-topo">
-            <h4>Disputa Elétrica</h4>
-            <span class="badge entregue">Entregue</span>
+
+        <h3 class="titulo-secao">Atividades</h3>
+        <div class="grid-atividades">
+          <div class="card-atividade" data-trimestre="1">
+            <div class="midia-atividade">
+              <div
+                class="imagem-faltando"
+                role="img"
+                aria-label="Imagem faltando"
+              >
+                ?
+              </div>
+            </div>
+            <div class="info">
+              <div class="linha-topo">
+                <h4>Grand Prix</h4>
+                <span class="badge pendente">Não participei</span>
+              </div>
+              <p class="descricao"></p>
+            </div>
           </div>
-          <p class="descricao">Competencias: C1, C2</p>
-          <p class="descricao">Habilidades: H1, H7, H9, H11, H12</p>
-        </div>
-      </div>
 
-      <div class="card-atividade card-recomposicao oculta" data-trimestre="recomposicao">
-        <div class="info">
-          <div class="linha-topo">
-            <h4>RECOMPOSIÇÃO DE APRENDIZAGEM</h4>
-            <span class="badge pendente">Pendente</span>
+          <div class="card-atividade oculta" data-trimestre="2"></div>
+
+          <div class="card-atividade oculta" data-trimestre="3">
+            <div class="midia-atividade">
+              <a
+                href="https://github.com/lcsvargas/alimentacao-3b"
+                target="_blank"
+                title="Atividade BP"
+              >
+                <img
+                  class="imagem-atividade"
+                  src="images/bp.png"
+                  alt="BP Promotora de Créditos"
+                />
+              </a>
+            </div>
+            <div class="info">
+              <div class="linha-topo">
+                <h4>Atividade: Programação e Desenvolvimento de Sistemas</h4>
+                <span class="badge entregue">Entregue</span>
+              </div>
+              <p class="descricao">Competencias: ?</p>
+              <p class="descricao">Habilidades: H2, H3, H4, H5</p>
+            </div>
           </div>
-          <p class="descricao">Nenhuma atividade cadastrada ainda.</p>
-        </div>
-      </div>
 
-    </div>
-
-    <div class="card">
-      <h3>Minhas Observações</h3>
-      <p class="texto-apoio"></p>
-    </div>
-
-  </div>
-
-  <!-- ========== ABA: HISTÓRIA ========== -->
-  <div id="historia" class="secao">
-
-    <div class="materia-cabecalho">
-      <div>
-        <h2>Humanas</h2>
-        <p class="professor">Prof. Bryan</p>
-        <p class="professor">Prof. Marcus</p>
-        <p class="professor">Prof. Lucas</p>
-        <p class="descricao-materia"></p>
-      </div>
-      <div class="media-box">
-        <span class="label">Média</span>
-        <span class="valor">--</span>
-      </div>
-    </div>
-
-    <div class="trimestres" aria-label="Trimestres de Humanas">
-      <button class="ativo" onclick="selecionarTrimestre(this, '1')">1º Trimestre</button>
-      <button onclick="selecionarTrimestre(this, '2')">2º Trimestre</button>
-      <button onclick="selecionarTrimestre(this, '3')">3º Trimestre</button>
-      <button onclick="selecionarTrimestre(this, 'recomposicao')">RECOMPOSIÇÃO DE APRENDIZAGEM</button>
-    </div>
-
-    <h3 class="titulo-secao">Atividades</h3>
-    <div class="grid-atividades">
-
-      <div class="card-atividade" data-trimestre="1 2 3">
-        <div class="midia-atividade">
-          <a href="https://docs.google.com/document/d/1lIiNK-RLreW2rf0pG4W3bI1jc15rrp0misjxRI21cD8/edit?usp=sharing" target="_blank" title="Visitar atividade seculo xx">
-          <img class="imagem-atividade" src="images/atv.png" alt="Atividade O Breve Século XX" /> </a>
-        </div>
-        <div class="info">
-          <div class="linha-topo">
-            <h4>O Breve Século XX</h4>
-            <span class="badge entregue">Entregue</span>
+          <div class="card-atividade oculta" data-trimestre="3">
+            <div class="midia-atividade">
+              <a
+                href="https://drive.google.com/file/d/1Fy64ELH4ApOw5emn-htSPtotyee0Nsym/view?usp=sharing"
+                target="_blank"
+                title="Vídeo do LED Funcionando"
+              >
+                <img
+                  class="imagem-atividade"
+                  src="images/iot3t.png"
+                  alt="LED ligando com a energia de um limão"
+                />
+              </a>
+            </div>
+            <div class="info">
+              <div class="linha-topo">
+                <h4>Atividade: Internet das Coisas (IoT)</h4>
+                <span class="badge entregue">Entregue</span>
+              </div>
+              <p class="descricao">Competencias: ?</p>
+              <p class="descricao">Habilidades: H1, H4, H6</p>
+            </div>
           </div>
-          <p class="descricao">Competencias: C3</p>
-          <p class="descricao">Habilidades: H15, H16, H20</p>
-        </div>
-      </div>
 
-      <div class="card-atividade" data-trimestre="1 2 3">
-      
-      </div>
-
-      <div class="card-atividade" data-trimestre="1 2 3">
-        <div class="midia-atividade">
-          <a href="https://canva.link/2ox2auzg57dez0q" target="_blank" title="european chronicle">
-          <img class="imagem-atividade" src="images/THE EUROPEAN CHRONICLE.png" alt="Imagem da atividade The European Chronicle" /> </a>
-        </div>
-        <div class="info">
-          <div class="linha-topo">
-            <h4>THE EUROPEAN CHRONICLE</h4>
-            <span class="badge entregue">Entregue</span>
+          <div
+            class="card-atividade card-recomposicao oculta"
+            data-trimestre="recomposicao"
+          >
+            <div class="info">
+              <div class="linha-topo">
+                <h4>RECOMPOSIÇÃO DE APRENDIZAGEM</h4>
+                <span class="badge pendente">Pendente</span>
+              </div>
+              <p class="descricao">Nenhuma atividade cadastrada ainda.</p>
+            </div>
           </div>
-          <p class="descricao">Competencias: C3</p>
-          <p class="descricao">Habilidades: H15, H16, H20</p>
         </div>
-      </div>
 
-      <div class="card-atividade card-recomposicao oculta" data-trimestre="recomposicao">
-        <div class="info">
-          <div class="linha-topo">
-            <h4>RECOMPOSIÇÃO DE APRENDIZAGEM</h4>
-            <span class="badge pendente">Pendente</span>
-          </div>
-          <p class="descricao">Nenhuma atividade cadastrada ainda.</p>
+        <div class="card">
+          <h3>Minhas Observações</h3>
+          <p class="texto-apoio"></p>
         </div>
-      </div>
-
-    </div>
-
-    <div class="card">
-      <h3>Minhas Observações</h3>
-      <p class="texto-apoio"></p>
-    </div>
-
-  </div>
-
-  <!-- ========== ABA: TÉCNICO ========== -->
-  <div id="artes" class="secao">
-
-    <div class="materia-cabecalho">
-      <div>
-        <h2>Técnico</h2>
-        <p class="professor">Prof. João Ricardo</p>
-        <p class="professor">Prof. Samuel</p>
-        <p class="professor">Prof. Willer</p>
-        <p class="descricao-materia"></p>
-      </div>
-      <div class="media-box">
-        <span class="label">Média</span>
-        <span class="valor">--</span>
       </div>
     </div>
 
-    <div class="trimestres" aria-label="Trimestres de Técnico">
-      <button class="ativo" onclick="selecionarTrimestre(this, '1')">1º Trimestre</button>
-      <button onclick="selecionarTrimestre(this, '2')">2º Trimestre</button>
-      <button onclick="selecionarTrimestre(this, '3')">3º Trimestre</button>
-      <button onclick="selecionarTrimestre(this, 'recomposicao')">RECOMPOSIÇÃO DE APRENDIZAGEM</button>
-    </div>
-
-    <h3 class="titulo-secao">Atividades</h3>
-    <div class="grid-atividades">
-
-      <div class="card-atividade" data-trimestre="1 2 3">
-        <div class="midia-atividade">
-          <div class="imagem-faltando" role="img" aria-label="Imagem faltando">?</div>
-        </div>
-        <div class="info">
-          <div class="linha-topo">
-            <h4>Grand Prix</h4>
-            <span class="badge pendente">Não participei</span>
-          </div>
-          <p class="descricao"></p>
-        </div>
-      </div>
-
-      <div class="card-atividade" data-trimestre="1 2 3">
-        <div class="midia-atividade">
-          <div class="imagem-faltando" role="img" aria-label="Imagem faltando">?</div>
-        </div>
-        <div class="info">
-          <div class="linha-topo">
-            <h4>Grand Prix</h4>
-            <span class="badge pendente">Não participei</span>
-          </div>
-          <p class="descricao"></p>
-        </div>
-      </div>
-
-      <div class="card-atividade" data-trimestre="1 2 3">
-        <div class="midia-atividade">
-          <div class="imagem-faltando" role="img" aria-label="Imagem faltando">?</div>
-        </div>
-        <div class="info">
-          <div class="linha-topo">
-            <h4>Grand Prix</h4>
-            <span class="badge pendente">Não participei</span>
-          </div>
-          <p class="descricao"></p>
-        </div>
-      </div>
-
-      <div class="card-atividade card-recomposicao oculta" data-trimestre="recomposicao">
-        <div class="info">
-          <div class="linha-topo">
-            <h4>RECOMPOSIÇÃO DE APRENDIZAGEM</h4>
-            <span class="badge pendente">Pendente</span>
-          </div>
-          <p class="descricao">Nenhuma atividade cadastrada ainda.</p>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="card">
-      <h3>Minhas Observações</h3>
-      <p class="texto-apoio"></p>
-    </div>
-
-  </div>
-
-</div>
-
-<script src="/script.js"></script>
-</body>
+    <script src="/script.js"></script>
+  </body>
 </html>
-
-
